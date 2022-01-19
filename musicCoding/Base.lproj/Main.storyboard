@@ -1,24 +1,438 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+<scene sceneID="tne-QT-ifu">
+    <objects>
+        <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="음악코딩" customModuleProvider="target" sceneMemberID="viewController">
+            <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7iC-Ak-1tl">
+                        <rect key="frame" x="313" y="49" width="62" height="533"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51h-rJ-QeU">
+                                <rect key="frame" x="12" y="50" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="레"/>
+                                <connections>
+                                    <action selector="re:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Z4-Cg-Lhn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHJ-bH-tLl">
+                                <rect key="frame" x="12" y="12" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="도"/>
+                                <connections>
+                                    <action selector="do:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtC-O4-pt3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r2-CM-xFA">
+                                <rect key="frame" x="12" y="450" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="반복"/>
+                                <connections>
+                                    <action selector="loopStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1q-AG-Cde"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vM2-al-sHw">
+                                <rect key="frame" x="2" y="338" width="51" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="쉼표"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0h-bO-zrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eq6-wK-TOl">
+                                <rect key="frame" x="8" y="488" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="반복끝"/>
+                                <connections>
+                                    <action selector="loopEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nzr-VO-248"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-12-AOG">
+                                <rect key="frame" x="12" y="126" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="파"/>
+                                <connections>
+                                    <action selector="fa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q3x-Pr-QSH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFA-zc-FZU">
+                                <rect key="frame" x="12" y="88" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="미"/>
+                                <connections>
+                                    <action selector="mi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2K-Sr-OWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR0-sK-yKF">
+                                <rect key="frame" x="12" y="164" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="솔"/>
+                                <connections>
+                                    <action selector="sol:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EB8-cz-kxX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcJ-HD-DR8">
+                                <rect key="frame" x="12" y="202" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="라"/>
+                                <connections>
+                                    <action selector="la:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTD-eY-XbO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekm-9c-l1K">
+                                <rect key="frame" x="12" y="240" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="시"/>
+                                <connections>
+                                    <action selector="si:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXl-U9-IuM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LC-A1-rYm">
+                                <rect key="frame" x="12" y="278" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="도"/>
+                                <connections>
+                                    <action selector="doUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAp-nE-OSS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubf-Eu-G5r">
+                                <rect key="frame" x="12" y="412" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="만약"/>
+                                <connections>
+                                    <action selector="ifSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbH-PX-Z0z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V0x-A7-Xeg">
+                        <rect key="frame" x="0.0" y="572" width="375" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQG-1P-nsk">
+                                <rect key="frame" x="31" y="10" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="재생"/>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hM8-Yx-44y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSe-U8-e6K">
+                                <rect key="frame" x="154" y="10" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="함수 목록"/>
+                                <connections>
+                                    <action selector="funcList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EEr-K3-eWp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CEo-U8-PxY">
+                                <rect key="frame" x="311" y="2" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="삭제"/>
+                                <connections>
+                                    <action selector="deleteNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0gD-nw-z5h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBy-1P-BPh">
+                                <rect key="frame" x="236" y="9" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="함수 생성"/>
+                                <connections>
+                                    <segue destination="ab0-1U-gaG" kind="presentation" identifier="defSegue" id="9gR-fx-xSs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="삭제 버튼을 누르면 진동이 울려요. 무음모드 해제 필수!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgS-hd-Eb1">
+                        <rect key="frame" x="6" y="20" width="364" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x4m-eQ-r8Y">
+                        <rect key="frame" x="0.0" y="49" width="305" height="523"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SheetCell" textLabel="ZAV-mg-KdB" style="IBUITableViewCellStyleDefault" id="hmD-oQ-maW">
+                                <rect key="frame" x="0.0" y="28" width="305" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hmD-oQ-maW" id="QLa-X6-Osr">
+                                    <rect key="frame" x="0.0" y="0.0" width="305" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZAV-mg-KdB">
+                                            <rect key="frame" x="15" y="0.0" width="275" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BYZ-38-t0r" id="kJa-kp-7w3"/>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="3Yh-V2-UQ6"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+            </view>
+            <navigationItem key="navigationItem" id="p8Q-Pv-pzw"/>
+            <connections>
+                <outlet property="DoButton" destination="7LC-A1-rYm" id="22U-BE-bbZ"/>
+                <outlet property="deleteButton" destination="CEo-U8-PxY" id="rbE-dr-zVO"/>
+                <outlet property="doButton" destination="yHJ-bH-tLl" id="5xr-Ke-vTT"/>
+                <outlet property="doUpButton" destination="7LC-A1-rYm" id="Tpw-T4-dyi"/>
+                <outlet property="faButton" destination="i6c-12-AOG" id="y5s-hw-M9N"/>
+                <outlet property="ifButton" destination="ubf-Eu-G5r" id="E1K-Zm-tzs"/>
+                <outlet property="laButton" destination="EcJ-HD-DR8" id="D7I-1F-mZm"/>
+                <outlet property="loopEndButton" destination="eq6-wK-TOl" id="ZXo-Nt-owy"/>
+                <outlet property="loopStartButton" destination="0r2-CM-xFA" id="NeP-kR-z1S"/>
+                <outlet property="miButton" destination="mFA-zc-FZU" id="UpU-cc-ZSw"/>
+                <outlet property="myTableView" destination="x4m-eQ-r8Y" id="sWf-je-g3y"/>
+                <outlet property="pauseButton" destination="vM2-al-sHw" id="ufd-Zt-76W"/>
+                <outlet property="reButton" destination="51h-rJ-QeU" id="lKZ-9U-foc"/>
+                <outlet property="siButton" destination="Ekm-9c-l1K" id="xSB-Wl-Z1e"/>
+                <outlet property="solButton" destination="SR0-sK-yKF" id="5cZ-l3-3qt"/>
+            </connections>
+        </viewController>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+    </objects>
+    <point key="canvasLocation" x="-434.39999999999998" y="178.56071964017991"/>
+</scene>
+<!--Def View Controller-->
+<scene sceneID="Eo0-VA-qtY">
+    <objects>
+        <viewController id="ab0-1U-gaG" customClass="DefViewController" customModule="음악코딩" customModuleProvider="target" sceneMemberID="viewController">
+            <view key="view" contentMode="scaleToFill" id="bvS-va-4Yv">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="함수 이름을 영어 또는 한글로 두 글자 이상 적어주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JbM-BO-T9u">
+                        <rect key="frame" x="16" y="9" width="343" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <attributedString key="userComments">
+                            <fragment content="hjhj"/>
+                        </attributedString>
+                    </textField>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="SheetCell2" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wdf-gF-IiU">
+                        <rect key="frame" x="0.0" y="51" width="305" height="503"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SheetCell2" id="3zj-6J-7a9">
+                                <rect key="frame" x="0.0" y="28" width="305" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3zj-6J-7a9" id="0sv-G1-sDz">
+                                    <rect key="frame" x="0.0" y="0.0" width="305" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vp7-Sh-HxN">
+                        <rect key="frame" x="313" y="51" width="62" height="533"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-IP-yhM">
+                                <rect key="frame" x="12" y="46" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="레"/>
+                                <connections>
+                                    <action selector="re:" destination="ab0-1U-gaG" eventType="touchUpInside" id="3XT-LQ-xsr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLN-lh-UI6">
+                                <rect key="frame" x="12" y="8" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="도"/>
+                                <connections>
+                                    <action selector="do:" destination="ab0-1U-gaG" eventType="touchUpInside" id="cHN-ex-4Xa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Ma-dW-XdR">
+                                <rect key="frame" x="2" y="326" width="51" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="쉼표"/>
+                                <connections>
+                                    <action selector="pause:" destination="ab0-1U-gaG" eventType="touchUpInside" id="bNu-Hk-FyR"/>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDb-bA-WoT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yA-V6-W0P">
+                                <rect key="frame" x="8" y="469" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="반복끝"/>
+                                <connections>
+                                    <action selector="loopEnd:" destination="ab0-1U-gaG" eventType="touchUpInside" id="6CI-vQ-Vzn"/>
+                                    <action selector="loopEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foc-B0-VNu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS0-to-ebk">
+                                <rect key="frame" x="12" y="122" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="파"/>
+                                <connections>
+                                    <action selector="fa:" destination="ab0-1U-gaG" eventType="touchUpInside" id="G3t-XZ-fkf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyO-0o-YAQ">
+                                <rect key="frame" x="12" y="84" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="미"/>
+                                <connections>
+                                    <action selector="mi:" destination="ab0-1U-gaG" eventType="touchUpInside" id="Cgp-6K-nHX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2H-mj-E7z">
+                                <rect key="frame" x="12" y="160" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="솔"/>
+                                <connections>
+                                    <action selector="sol:" destination="ab0-1U-gaG" eventType="touchUpInside" id="BrY-3z-KUC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ood-O0-1Kf">
+                                <rect key="frame" x="12" y="198" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="라"/>
+                                <connections>
+                                    <action selector="la:" destination="ab0-1U-gaG" eventType="touchUpInside" id="eky-eI-CoH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-RV-axG">
+                                <rect key="frame" x="12" y="236" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="시"/>
+                                <connections>
+                                    <action selector="si:" destination="ab0-1U-gaG" eventType="touchUpInside" id="llf-xx-NMR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTy-lP-Ym3">
+                                <rect key="frame" x="12" y="274" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="도"/>
+                                <connections>
+                                    <action selector="doUp:" destination="ab0-1U-gaG" eventType="touchUpInside" id="4V8-gk-H4A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cha-Wq-YIA">
+                                <rect key="frame" x="12" y="393" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="만약"/>
+                                <connections>
+                                    <action selector="ifSetting:" destination="ab0-1U-gaG" eventType="touchUpInside" id="iJG-7w-yqB"/>
+                                    <action selector="ifSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMu-Kz-hxT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51v-ZI-fcr">
+                                <rect key="frame" x="12" y="431" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="반복"/>
+                                <connections>
+                                    <action selector="loopStart:" destination="ab0-1U-gaG" eventType="touchUpInside" id="320-Op-hLS"/>
+                                    <action selector="loopStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3H-XP-Pnf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMQ-C8-wBM">
+                        <rect key="frame" x="0.0" y="552" width="375" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-lE-wwZ">
+                                <rect key="frame" x="31" y="10" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="재생"/>
+                                <connections>
+                                    <action selector="playSound:" destination="ab0-1U-gaG" eventType="touchUpInside" id="mps-cc-nJU"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMQ-jf-A7G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C6g-dh-Xek">
+                                <rect key="frame" x="315" y="8" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="삭제"/>
+                                <connections>
+                                    <action selector="deleteNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TTB-Vo-NwV"/>
+                                    <action selector="deleteNote:" destination="ab0-1U-gaG" eventType="touchUpInside" id="mzc-Jc-d5i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w15-im-Eoe">
+                                <rect key="frame" x="266" y="15" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="완성"/>
+                                <connections>
+                                    <action selector="complete:" destination="ab0-1U-gaG" eventType="touchUpInside" id="WQt-Vc-iah"/>
+                                    <segue destination="lTv-qt-HEk" kind="unwind" unwindAction="myExitWithSender:" id="t7T-cF-eao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCE-en-Eib">
+                                <rect key="frame" x="202" y="15" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="취소"/>
+                                <connections>
+                                    <action selector="cancel:" destination="ab0-1U-gaG" eventType="touchUpInside" id="5bN-nq-BG4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <viewLayoutGuide key="safeArea" id="Vlc-Oh-NZq"/>
+            </view>
+            <connections>
+                <outlet property="defNameInput" destination="JbM-BO-T9u" id="lbx-fc-dtT"/>
+                <outlet property="deleteButton" destination="C6g-dh-Xek" id="HeJ-xW-m69"/>
+                <outlet property="doButton" destination="xLN-lh-UI6" id="GRV-ia-PDH"/>
+                <outlet property="doUpButton" destination="DTy-lP-Ym3" id="KG0-Hj-EFB"/>
+                <outlet property="faButton" destination="KS0-to-ebk" id="kAA-gZ-Jwq"/>
+                <outlet property="ifButton" destination="cha-Wq-YIA" id="Z7k-bs-UgL"/>
+                <outlet property="laButton" destination="ood-O0-1Kf" id="K5r-Wo-Zv4"/>
+                <outlet property="loopEndButton" destination="1yA-V6-W0P" id="KCj-dx-FPo"/>
+                <outlet property="loopStartButton" destination="51v-ZI-fcr" id="PrH-kz-t6D"/>
+                <outlet property="miButton" destination="VyO-0o-YAQ" id="JfG-1a-ld6"/>
+                <outlet property="myTableView" destination="Wdf-gF-IiU" id="RbA-DU-sMO"/>
+                <outlet property="pauseButton" destination="3Ma-dW-XdR" id="RS5-IO-kFe"/>
+                <outlet property="reButton" destination="MY1-IP-yhM" id="TW2-Ex-z15"/>
+                <outlet property="siButton" destination="A4c-RV-axG" id="AHj-nz-fez"/>
+                <outlet property="solButton" destination="G2H-mj-E7z" id="2oU-yr-QkE"/>
+            </connections>
+        </viewController>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="0UT-RK-xWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+        <exit id="lTv-qt-HEk" userLabel="Exit" sceneMemberID="exit"/>
+    </objects>
+    <point key="canvasLocation" x="239.19999999999999" y="176.76161919040482"/>
+</scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

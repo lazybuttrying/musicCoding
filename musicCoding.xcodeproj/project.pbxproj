@@ -16,6 +16,16 @@
 		18B51550279819CA00648E59 /* musicCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5154F279819CA00648E59 /* musicCodingTests.swift */; };
 		18B5155A279819CA00648E59 /* musicCodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B51559279819CA00648E59 /* musicCodingUITests.swift */; };
 		18B5155C279819CA00648E59 /* musicCodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5155B279819CA00648E59 /* musicCodingUITestsLaunchTests.swift */; };
+		18B5157027981A5900648E59 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156827981A5800648E59 /* sound1.mp3 */; };
+		18B5157127981A5900648E59 /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156927981A5800648E59 /* sound2.mp3 */; };
+		18B5157227981A5900648E59 /* sound5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156A27981A5800648E59 /* sound5.mp3 */; };
+		18B5157327981A5900648E59 /* sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156B27981A5800648E59 /* sound3.mp3 */; };
+		18B5157427981A5900648E59 /* sound6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156C27981A5800648E59 /* sound6.mp3 */; };
+		18B5157527981A5900648E59 /* sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156D27981A5900648E59 /* sound4.mp3 */; };
+		18B5157627981A5900648E59 /* sound8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156E27981A5900648E59 /* sound8.mp3 */; };
+		18B5157727981A5900648E59 /* sound7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18B5156F27981A5900648E59 /* sound7.mp3 */; };
+		18B5157A27981AC000648E59 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 18B5157927981AC000648E59 /* AudioKit */; };
+		18B5157C27981D8E00648E59 /* DefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5157B27981D8E00648E59 /* DefViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,15 @@
 		18B51555279819CA00648E59 /* musicCodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = musicCodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B51559279819CA00648E59 /* musicCodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicCodingUITests.swift; sourceTree = "<group>"; };
 		18B5155B279819CA00648E59 /* musicCodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicCodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18B5156827981A5800648E59 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		18B5156927981A5800648E59 /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
+		18B5156A27981A5800648E59 /* sound5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound5.mp3; sourceTree = "<group>"; };
+		18B5156B27981A5800648E59 /* sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound3.mp3; sourceTree = "<group>"; };
+		18B5156C27981A5800648E59 /* sound6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound6.mp3; sourceTree = "<group>"; };
+		18B5156D27981A5900648E59 /* sound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound4.mp3; sourceTree = "<group>"; };
+		18B5156E27981A5900648E59 /* sound8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound8.mp3; sourceTree = "<group>"; };
+		18B5156F27981A5900648E59 /* sound7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound7.mp3; sourceTree = "<group>"; };
+		18B5157B27981D8E00648E59 /* DefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B5157A27981AC000648E59 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +99,14 @@
 		18B5152C279819C700648E59 = {
 			isa = PBXGroup;
 			children = (
+				18B5156827981A5800648E59 /* sound1.mp3 */,
+				18B5156927981A5800648E59 /* sound2.mp3 */,
+				18B5156B27981A5800648E59 /* sound3.mp3 */,
+				18B5156D27981A5900648E59 /* sound4.mp3 */,
+				18B5156A27981A5800648E59 /* sound5.mp3 */,
+				18B5156C27981A5800648E59 /* sound6.mp3 */,
+				18B5156F27981A5900648E59 /* sound7.mp3 */,
+				18B5156E27981A5900648E59 /* sound8.mp3 */,
 				18B51537279819C700648E59 /* musicCoding */,
 				18B5154E279819CA00648E59 /* musicCodingTests */,
 				18B51558279819CA00648E59 /* musicCodingUITests */,
@@ -102,6 +130,7 @@
 				18B51538279819C700648E59 /* AppDelegate.swift */,
 				18B5153A279819C700648E59 /* SceneDelegate.swift */,
 				18B5153C279819C700648E59 /* ViewController.swift */,
+				18B5157B27981D8E00648E59 /* DefViewController.swift */,
 				18B5153E279819C700648E59 /* Main.storyboard */,
 				18B51541279819CA00648E59 /* Assets.xcassets */,
 				18B51543279819CA00648E59 /* LaunchScreen.storyboard */,
@@ -143,6 +172,9 @@
 			dependencies = (
 			);
 			name = musicCoding;
+			packageProductDependencies = (
+				18B5157927981AC000648E59 /* AudioKit */,
+			);
 			productName = musicCoding;
 			productReference = 18B51535279819C700648E59 /* musicCoding.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 18B5152C279819C700648E59;
+			packageReferences = (
+				18B5157827981AC000648E59 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 18B51536279819C700648E59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +266,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B5157127981A5900648E59 /* sound2.mp3 in Resources */,
 				18B51545279819CA00648E59 /* LaunchScreen.storyboard in Resources */,
+				18B5157227981A5900648E59 /* sound5.mp3 in Resources */,
 				18B51542279819CA00648E59 /* Assets.xcassets in Resources */,
+				18B5157027981A5900648E59 /* sound1.mp3 in Resources */,
+				18B5157627981A5900648E59 /* sound8.mp3 in Resources */,
+				18B5157327981A5900648E59 /* sound3.mp3 in Resources */,
+				18B5157527981A5900648E59 /* sound4.mp3 in Resources */,
 				18B51540279819C700648E59 /* Main.storyboard in Resources */,
+				18B5157727981A5900648E59 /* sound7.mp3 in Resources */,
+				18B5157427981A5900648E59 /* sound6.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B5157C27981D8E00648E59 /* DefViewController.swift in Sources */,
 				18B5153D279819C700648E59 /* ViewController.swift in Sources */,
 				18B51539279819C700648E59 /* AppDelegate.swift in Sources */,
 				18B5153B279819C700648E59 /* SceneDelegate.swift in Sources */,
@@ -598,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18B5157827981AC000648E59 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18B5157927981AC000648E59 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B5157827981AC000648E59 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18B5152D279819C700648E59 /* Project object */;
 }
